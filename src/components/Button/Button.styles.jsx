@@ -1,32 +1,38 @@
 import styled from "styled-components";
 
 const getColor = ({ color }) => {
-  return color === "" ? "" : color;
+  if (!color) return "#000000";
+  return color.startsWith("--") ? `var(${color})` : color;
 };
 
 const getShadow = ({ shadow }) => {
   if (!shadow) return "";
-  return `inset 0px 0px 12px 4px ${shadow}`;
+  return `inset 0px 0px 12px 4px ${
+    shadow.startsWith("--") ? `var(${shadow})` : shadow
+  }`;
 };
 
 const getWeight = ({ weight }) => {
-  if (!weight) return "Source Sans Pro Regular";
+  if (!weight) return "var(--font-regular)";
   const lowerCaseWeight = weight.toLowerCase();
 
   switch (lowerCaseWeight) {
     case "italic":
-      return "Source Sans Pro Italic";
+      return "var(--font-italic)";
+    case "italic-bold":
+      return "var(--font-italic-bold)";
     case "bold":
-      return "Source Sans Pro Bold";
+      return "var(--font-bold)";
     case "light":
-      return "Source Sans Pro Light";
+      return "var(--font-light)";
     default:
-      return "Source Sans Pro Regular";
+      return "var(--font-regular)";
   }
 };
 
 const getBackground = ({ background }) => {
-  return !background ? "transparent" : background;
+  if (!background) return "transparent";
+  return background.startsWith("--") ? `var(${background})` : background;
 };
 
 const StyledButton = styled.button`

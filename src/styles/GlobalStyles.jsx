@@ -40,7 +40,19 @@ const GlobalStyle = createGlobalStyle`
 }
 
 :root {
-  font-family: 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
+  --blue: #2271D1;
+  --dark-gray: #262626;
+  --black: #000000E5;
+  --white: #FFFFFF;
+  --red: #FF0000;
+
+  --font-italic: 'Source Sans Pro Italic';
+  --font-italic-bold: 'Source Sans Pro Italic Bold';
+  --font-light: 'Source Sans Pro Light';
+  --font-regular: 'Source Sans Pro Regular';
+  --font-bold: 'Source Sans Pro Bold';
+
+  font-family: var(--font-regular), Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 

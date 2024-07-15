@@ -7,22 +7,24 @@ import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <StyledHeader>
-      <h1 style={{ height: "40px" }}>
-        <img src={logo} alt="Logo de AluraFlix" style={{ height: "40px" }} />
-      </h1>
+      <Link to="/">
+        <h1 style={{ height: "40px" }}>
+          <img src={logo} alt="Logo de AluraFlix" style={{ height: "40px" }} />
+        </h1>
+      </Link>
       <StyledNav>
         <Link to="/">
           <Button
-            color="#2271D1"
-            shadow="#2271D1"
-            background="#000000"
+            color="--blue"
+            shadow="--blue"
+            background="--black"
             weight="bold"
           >
             Home
           </Button>
         </Link>
         <Link to="/add">
-          <Button color="#fff" weight="bold">
+          <Button color="--white" weight="bold">
             Nuevo Video
           </Button>
         </Link>
