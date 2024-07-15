@@ -1,8 +1,46 @@
-import { createGlobalStyle } from "styled-components";
+import { createGlobalStyle } from 'styled-components';
+
+import SourceSansProItalic from './font/SourceSansPro-Italic.ttf';
+import SourceSansProBoldItalic from './font/SourceSansPro-BoldItalic.ttf';
+import SourceSansProLight from './font/SourceSansPro-Light.ttf';
+import SourceSansProRegular from './font/SourceSansPro-Regular.ttf';
+import SourceSansProBold from './font/SourceSansPro-Bold.ttf';
 
 const GlobalStyle = createGlobalStyle`
+@font-face {
+  font-family: 'Source Sans Pro Light';
+  src: local('Source Sans Pro Light'), local('Source-Sans-Pro-Light'), url(${SourceSansProLight});
+  font-weight: lighter;
+}
+  
+@font-face {
+  font-family: 'Source Sans Pro Regular';
+  src: local('Source Sans Pro Regular'), local('Source-Sans-Pro-Regular'), url(${SourceSansProRegular});
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro Bold';
+    src: local('Source Sans Pro Bold'), local('Source-Sans-Pro-Bold'), url(${SourceSansProBold});
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Italic';
+  src: local('Source Sans Pro Italic'), local('Source-Sans-Pro-Italic'), url(${SourceSansProItalic});
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro Bold Italic';
+  src: local('Source Sans Pro Bold Italic'), local('Source-Sans-Pro-Bold Italic'), url(${SourceSansProBoldItalic});
+  font-weight: normal;
+}
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Source Sans Pro Regular', Arial, Helvetica, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
@@ -40,6 +78,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 abbr[title] {

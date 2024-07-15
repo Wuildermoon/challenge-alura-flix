@@ -4,7 +4,7 @@ const GobalContext = createContext();
 
 const GlobalContext = () => {
   return (
-    <div>GlobalContext</div>
+    <></>
   )
 }
 
