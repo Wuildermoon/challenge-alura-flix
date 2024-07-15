@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <>
       <Header />
+      <main style={{ minHeight: "100vh" }}></main>
       <Footer />
     </>
   );
