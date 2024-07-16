@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
   --blue: #2271D1;
   --dark-gray: #262626;
   --black: #000000E5;
-  --white: #FFFFFF;
+  --white: #F5F5F5;
   --red: #FF0000;
 
   --font-italic: 'Source Sans Pro Italic';

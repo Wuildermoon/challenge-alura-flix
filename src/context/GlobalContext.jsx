@@ -1,11 +1,20 @@
-import { createContext } from "react";
+import { createContext, useEffect, useState } from "react";
+import videoList from "../data/db.json";
 
-const GobalContext = createContext();
+export const GlobalContext = createContext();
 
-const GlobalContext = () => {
+const GlobalContextProvider = ({children}) => {
+  const [videos, setVideos] = useState([]);
+
+  useEffect(() => {
+    setVideos(videoList.videos);
+  }, []);
+
   return (
-    <></>
-  )
-}
+    <GlobalContext.Provider value={{ videos, setVideos }}>
+      {children}
+    </GlobalContext.Provider>
+  );
+};
 
-export default GlobalContext
+export default GlobalContextProvider;

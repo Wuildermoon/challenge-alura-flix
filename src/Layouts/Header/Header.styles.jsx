@@ -10,6 +10,8 @@ const StyledHeader = styled.header`
   background-color: #262626;
   border-bottom: 4px solid var(--blue);
   box-shadow: 0px 5px 29px 0px #2271D1B2;
+  position: relative;
+  z-index: 3;
 `;
 
 const StyledNav = styled.nav`

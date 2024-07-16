@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-const getColor = ({ color }) => {
-  if (!color) return "#000000";
-  return color.startsWith("--") ? `var(${color})` : color;
+const getColor = ({ $color }) => {
+  if (!$color) return "#000000";
+  return $color.startsWith("--") ? `var(${$color})` : $color;
 };
 
-const getShadow = ({ shadow }) => {
-  if (!shadow) return "";
+const getShadow = ({ $shadow }) => {
+  if (!$shadow) return "";
   return `inset 0px 0px 12px 4px ${
-    shadow.startsWith("--") ? `var(${shadow})` : shadow
+    $shadow.startsWith("--") ? `var(${$shadow})` : $shadow
   }`;
 };
 
-const getWeight = ({ weight }) => {
-  if (!weight) return "var(--font-regular)";
-  const lowerCaseWeight = weight.toLowerCase();
+const getWeight = ({ $weight }) => {
+  if (!$weight) return "var(--font-regular)";
+  const lowerCaseWeight = $weight.toLowerCase();
 
   switch (lowerCaseWeight) {
     case "italic":
@@ -30,9 +30,9 @@ const getWeight = ({ weight }) => {
   }
 };
 
-const getBackground = ({ background }) => {
-  if (!background) return "transparent";
-  return background.startsWith("--") ? `var(${background})` : background;
+const getBackground = ({ $background }) => {
+  if (!$background) return "transparent";
+  return $background.startsWith("--") ? `var(${$background})` : $background;
 };
 
 const StyledButton = styled.button`
