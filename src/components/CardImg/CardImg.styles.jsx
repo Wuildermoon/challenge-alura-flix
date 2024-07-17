@@ -1,21 +1,23 @@
 import styled from "styled-components";
 
-const getWidth = ({ $width }) => {
-  if (!$width) return "auto";
-  return $width.startsWith("--") ? `var(${$width})` : $width;
-};
-
 const getOutline = ({ $outline }) => {
   if (!$outline) return "";
   return $outline.startsWith("--") ? `var(${$outline})` : $outline;
+};
+
+const getBorderRadius = ({ $borderRadius }) => {
+  if (!$borderRadius) return "";
+  return $borderRadius.startsWith("--")
+    ? `var(${$borderRadius})`
+    : $borderRadius;
 };
 
 const StyledImg = styled.div`
   display: inline-block;
   position: relative;
   overflow: hidden;
-  border-radius: 20px;
-  width: ${getWidth};
+  border-radius: ${getBorderRadius};
+  width: 100%;
 
   &::before {
     content: "";
@@ -24,8 +26,8 @@ const StyledImg = styled.div`
     left: 0;
     right: 0;
     bottom: 0;
-    border: 5px solid ${getOutline};
-    border-radius: 20px;
+    border: 3px solid ${getOutline};
+    border-radius: ${getBorderRadius};
     box-shadow: 0px 0px 17px 8px ${getOutline} inset;
     pointer-events: none;
   }

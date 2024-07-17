@@ -1,17 +1,21 @@
 import { createContext, useEffect, useState } from "react";
-import videoList from "../data/db.json";
+import db from "../assets/data/db.json";
 
 export const GlobalContext = createContext();
 
-const GlobalContextProvider = ({children}) => {
+const GlobalContextProvider = ({ children }) => {
   const [videos, setVideos] = useState([]);
+  const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    setVideos(videoList.videos);
+    setCategories(db.categories);
+    setVideos(db.videos);
   }, []);
 
   return (
-    <GlobalContext.Provider value={{ videos, setVideos }}>
+    <GlobalContext.Provider
+      value={{ videos, setVideos, categories, setCategories }}
+    >
       {children}
     </GlobalContext.Provider>
   );

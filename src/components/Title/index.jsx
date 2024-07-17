@@ -1,23 +1,12 @@
 import React from "react";
-import StyledTitle from "./Title.styles";
+import { StyledTitle, StyledH2 } from "./Title.styles";
 
-const Title = ({
-  height,
-  width,
-  color,
-  fontSize,
-  backgroundColor,
-  children,
-}) => {
+const Title = ({ color, fontSize, lineHeight, backgroundColor, children }) => {
   return (
-    <StyledTitle
-      $height={height}
-      $width={width}
-      $color={color}
-      $fontSize={fontSize}
-      $backgroundColor={backgroundColor}
-    >
-      <h2>{children}</h2>
+    <StyledTitle $color={color} $backgroundColor={backgroundColor}>
+      <StyledH2 $fontSize={fontSize} $lineHeight={lineHeight}>
+        {children}
+      </StyledH2>
     </StyledTitle>
   );
 };

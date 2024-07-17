@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import banner from "../../assets/img/banner.png";
+import banner from "/images/banner.png";
 
 const StyledBanner = styled.section`
   height: 85vh;

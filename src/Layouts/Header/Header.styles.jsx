@@ -7,7 +7,7 @@ const StyledHeader = styled.header`
   height: 80px;
   margin: auto 0;
   padding: 10px 20px;
-  background-color: #262626;
+  background-color: var(--black);
   border-bottom: 4px solid var(--blue);
   box-shadow: 0px 5px 29px 0px #2271D1B2;
   position: relative;

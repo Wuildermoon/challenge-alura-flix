@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../components/Button";
 import { StyledHeader, StyledNav } from "./Header.styles";
-import logo from "../../assets/img/logo.png";
+import logo from "/images/logo.png";
 import { Link } from "react-router-dom";
 
 const Header = () => {
@@ -9,7 +9,13 @@ const Header = () => {
     <StyledHeader>
       <Link to="/">
         <h1 style={{ height: "40px" }}>
-          <img src={logo} alt="Logo de AluraFlix" style={{ height: "40px" }} />
+          <figure>
+            <img
+              src={logo}
+              alt="Logo de AluraFlix"
+              style={{ height: "40px" }}
+            />
+          </figure>
         </h1>
       </Link>
       <StyledNav>

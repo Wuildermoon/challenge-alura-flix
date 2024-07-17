@@ -1,23 +1,18 @@
 import styled from "styled-components";
 
-const getHeight = ({ $height }) => {
-  if (!$height) return "auto";
-  return $height.startsWith("--") ? `var(${$height})` : $height;
-};
-
-const getWidth = ({ $width }) => {
-  if (!$width) return "auto";
-  return $width.startsWith("--") ? `var(${$width})` : $width;
-};
-
 const getColor = ({ $color }) => {
   if (!$color) return "#FFFFFF";
   return $color.startsWith("--") ? `var(${$color})` : $color;
 };
 
 const getFontSize = ({ $fontSize }) => {
-  if (!$fontSize) return "auto";
+  if (!$fontSize) return "32px";
   return $fontSize.startsWith("--") ? `var(${$fontSize})` : $fontSize;
+};
+
+const getLineHeight = ({ $lineHeight }) => {
+  if (!$lineHeight) return "37.5px";
+  return $lineHeight.startsWith("--") ? `var(${$lineHeight})` : $lineHeight;
 };
 
 const getBackgroundColor = ({ $backgroundColor }) => {
@@ -28,21 +23,22 @@ const getBackgroundColor = ({ $backgroundColor }) => {
 };
 
 const StyledTitle = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: inline-block;
   border-radius: 15px;
   text-align: center;
   background-color: ${getBackgroundColor};
-  height: ${getHeight};
-  width: ${getWidth};
+  height: auto;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 10px 50px;
   color: ${getColor};
-
-  & h2 {
-    font-family: var(--font-bold);
-    font-size: ${getFontSize};
-    line-height: 56px;
-  }
 `;
 
-export default StyledTitle;
+const StyledH2 = styled.h2`
+  display: inline;
+  font-family: var(--font-bold);
+  font-size: ${getFontSize};
+  line-height: ${getLineHeight};
+`;
+
+export { StyledTitle, StyledH2 };

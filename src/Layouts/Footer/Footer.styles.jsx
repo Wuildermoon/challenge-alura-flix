@@ -5,8 +5,9 @@ const StyledFooter = styled.footer`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  justify-content: flex-end;
-  background-color: #262626;
+  justify-content: center;
+  padding: 1%;
+  background-color: var(--black);
   border-top: 4px solid var(--blue);
   box-shadow: 0px -5px 29px 0px #2271d1b2;
   color: var(--white);

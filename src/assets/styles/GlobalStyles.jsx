@@ -1,10 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
 
-import SourceSansProItalic from './font/SourceSansPro-Italic.ttf';
-import SourceSansProBoldItalic from './font/SourceSansPro-BoldItalic.ttf';
-import SourceSansProLight from './font/SourceSansPro-Light.ttf';
-import SourceSansProRegular from './font/SourceSansPro-Regular.ttf';
-import SourceSansProBold from './font/SourceSansPro-Bold.ttf';
+import SourceSansProItalic from '../font/SourceSansPro-Italic.ttf';
+import SourceSansProBoldItalic from '../font/SourceSansPro-BoldItalic.ttf';
+import SourceSansProLight from '../font/SourceSansPro-Light.ttf';
+import SourceSansProRegular from '../font/SourceSansPro-Regular.ttf';
+import SourceSansProBold from '../font/SourceSansPro-Bold.ttf';
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
