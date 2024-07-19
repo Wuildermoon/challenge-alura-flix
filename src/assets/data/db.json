@@ -5,6 +5,7 @@
       "title": "Qué Significa Pensar Como Programador",
       "banner": "/images/videos/video-1.png",
       "link": "https://www.youtube.com/watch?v=ov7vA5HFe6w",
+      "description": "¡Hola, soy una descripción!",
       "category": "banner"
     },
     {
@@ -12,6 +13,7 @@
       "title": "Cuándo usar let, var y const? #AluraMás",
       "banner": "/images/videos/video-2.png",
       "link": "https://www.youtube.com/watch?v=PztCEdIJITY",
+      "description": "¡Hola, soy una descripción!",
       "category": "Front End"
     },
     {
@@ -19,6 +21,7 @@
       "title": "¿Qué es JavaScript?",
       "banner": "/images/videos/video-3.png",
       "link": "https://www.youtube.com/watch?v=GJfOSoaXk4s",
+      "description": "¡Hola, soy una descripción!",
       "category": "Front End"
     },
     {
@@ -26,6 +29,7 @@
       "title": "Equipo Front End #AluraMás",
       "banner": "/images/videos/video-4.png",
       "link": "https://www.youtube.com/watch?v=rpvrLaBQwgg",
+      "description": "¡Hola, soy una descripción!",
       "category": "Front End"
     },
     {
@@ -33,6 +37,7 @@
       "title": "Spring Framework. ¿Qué es ? #AluraMás",
       "banner": "/images/videos/video-5.png",
       "link": "https://www.youtube.com/watch?v=t-iqt1b2qqk",
+      "description": "¡Hola, soy una descripción!",
       "category": "Back End"
     },
     {
@@ -40,6 +45,7 @@
       "title": "¿Qué es SQL y NoSQL?",
       "banner": "/images/videos/video-6.png",
       "link": "https://www.youtube.com/watch?v=cLLKVd5CNLc",
+      "description": "¡Hola, soy una descripción!",
       "category": "Back End"
     },
     {
@@ -47,6 +53,7 @@
       "title": "Simplificando tu código en Java: Conoce los enum #AluraMás",
       "banner": "/images/videos/video-7.png",
       "link": "https://www.youtube.com/watch?v=EoPvlE85XAQ",
+      "description": "¡Hola, soy una descripción!",
       "category": "Back End"
     },
     {
@@ -54,6 +61,7 @@
       "title": "¿Qué son las Soft Skills?",
       "banner": "/images/videos/video-8.png",
       "link": "https://www.youtube.com/watch?v=vhwspfvI52k",
+      "description": "¡Hola, soy una descripción!",
       "category": "Innovación y Gestión"
     },
     {
@@ -61,6 +69,7 @@
       "title": "7 Soft Skills más deseadas por las empresas #AluraMás",
       "banner": "/images/videos/video-9.png",
       "link": "https://www.youtube.com/watch?v=YhR7Zp8NUzE",
+      "description": "¡Hola, soy una descripción!",
       "category": "Innovación y Gestión"
     },
     {
@@ -68,6 +77,7 @@
       "title": "¿Qué son las metodologias ágiles?",
       "banner": "/images/videos/video-10.png",
       "link": "https://www.youtube.com/watch?v=6N3OkLCfK-0",
+      "description": "¡Hola, soy una descripción!",
       "category": "Innovación y Gestión"
     }
   ],
