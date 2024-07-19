@@ -5,7 +5,7 @@ const StyledBannerCard = styled.div`
   align-items: center;
   justify-content: center;
   gap: 50px;
-  z-index: 1;
+  position: inherit;
 `;
 
 const StyledDiv = styled.div`

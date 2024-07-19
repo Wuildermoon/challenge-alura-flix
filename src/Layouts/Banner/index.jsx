@@ -4,10 +4,12 @@ import BannerCard from "../../components/BannerCard";
 
 const Banner = () => {
   return (
-    <StyledBanner>
-      <BannerCard />
-      <StyledGradient />
-    </StyledBanner>
+    <>
+      <StyledBanner>
+        <StyledGradient />
+        <BannerCard />
+      </StyledBanner>
+    </>
   );
 };
 

@@ -13,7 +13,7 @@ const StyledFooter = styled.footer`
   color: var(--white);
   font-size: 14px;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 `;
 
 export default StyledFooter;

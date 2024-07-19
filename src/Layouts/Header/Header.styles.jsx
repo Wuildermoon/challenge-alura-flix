@@ -9,9 +9,12 @@ const StyledHeader = styled.header`
   padding: 10px 20px;
   background-color: var(--black);
   border-bottom: 4px solid var(--blue);
-  box-shadow: 0px 5px 29px 0px #2271D1B2;
-  position: relative;
-  z-index: 3;
+  box-shadow: 0px 5px 29px 0px #2271d1b2;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
 `;
 
 const StyledNav = styled.nav`

@@ -6,36 +6,38 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <StyledHeader>
-      <Link to="/">
-        <h1 style={{ height: "40px" }}>
-          <figure>
-            <img
-              src={logo}
-              alt="Logo de AluraFlix"
-              style={{ height: "40px" }}
-            />
-          </figure>
-        </h1>
-      </Link>
-      <StyledNav>
+    <>
+      <StyledHeader>
         <Link to="/">
-          <Button
-            color="--blue"
-            shadow="--blue"
-            background="--black"
-            weight="bold"
-          >
-            Home
-          </Button>
+          <h1 style={{ height: "40px" }}>
+            <figure>
+              <img
+                src={logo}
+                alt="Logo de AluraFlix"
+                style={{ height: "40px" }}
+              />
+            </figure>
+          </h1>
         </Link>
-        <Link to="/add">
-          <Button color="--white" weight="bold">
-            Nuevo Video
-          </Button>
-        </Link>
-      </StyledNav>
-    </StyledHeader>
+        <StyledNav>
+          <Link to="/">
+            <Button
+              color="--blue"
+              shadow="--blue"
+              background="--black"
+              weight="bold"
+            >
+              Home
+            </Button>
+          </Link>
+          <Link to="/add">
+            <Button color="--white" weight="bold">
+              Nuevo Video
+            </Button>
+          </Link>
+        </StyledNav>
+      </StyledHeader>
+    </>
   );
 };
 
