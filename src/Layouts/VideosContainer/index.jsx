@@ -27,6 +27,7 @@ const VideosContainer = () => {
                     borderRadius={"15px 15px 0 0"}
                     src={video.banner}
                     alt={video.title}
+                    video={video}
                   />
                 ))}
             </StyledDiv>

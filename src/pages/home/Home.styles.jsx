@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const StyledMain = styled.main`
-background-color: var(--dark-gray);
+  margin: 0 auto;
 `;
 
 export default StyledMain;

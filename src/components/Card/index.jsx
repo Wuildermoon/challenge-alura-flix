@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import { StyledButton, StyledCard, StyledDiv } from "./Card.styles";
 import CardImg from "../CardImg";
+import { GlobalContext } from "../../context/GlobalContext";
 
-const Card = ({ width, outline, borderRadius, src, alt }) => {
+const Card = ({ width, outline, borderRadius, src, alt, video }) => {
+  const { toggleModal } = useContext(GlobalContext);
+
   return (
     <StyledCard>
       <CardImg
@@ -14,14 +17,11 @@ const Card = ({ width, outline, borderRadius, src, alt }) => {
       <StyledDiv $outline={outline}>
         <StyledButton>
           <span>
-            <img
-              src="/images/icons/icon-delete.png"
-              alt="Icono Editar"
-            />
+            <img src="/images/icons/icon-delete.png" alt="Icono Borrar" />
           </span>
           borrar
         </StyledButton>
-        <StyledButton>
+        <StyledButton onClick={() => toggleModal(video)}>
           <span>
             <img src="/images/icons/icon-edit.png" alt="Icono Editar" />
           </span>
