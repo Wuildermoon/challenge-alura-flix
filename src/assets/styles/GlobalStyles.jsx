@@ -1,10 +1,10 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
-import SourceSansProItalic from '../font/SourceSansPro-Italic.ttf';
-import SourceSansProBoldItalic from '../font/SourceSansPro-BoldItalic.ttf';
-import SourceSansProLight from '../font/SourceSansPro-Light.ttf';
-import SourceSansProRegular from '../font/SourceSansPro-Regular.ttf';
-import SourceSansProBold from '../font/SourceSansPro-Bold.ttf';
+import SourceSansProItalic from "../font/SourceSansPro-Italic.ttf";
+import SourceSansProBoldItalic from "../font/SourceSansPro-BoldItalic.ttf";
+import SourceSansProLight from "../font/SourceSansPro-Light.ttf";
+import SourceSansProRegular from "../font/SourceSansPro-Regular.ttf";
+import SourceSansProBold from "../font/SourceSansPro-Bold.ttf";
 
 const GlobalStyle = createGlobalStyle`
 @font-face {
@@ -41,6 +41,7 @@ const GlobalStyle = createGlobalStyle`
 
 :root {
   --blue: #2271D1;
+  --light-gray:#A5A5A5;
   --dark-gray: #262626;
   --black: #000000E5;
   --white: #F5F5F5;
@@ -62,6 +63,32 @@ const GlobalStyle = createGlobalStyle`
   -webkit-text-size-adjust: 100%;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  background: var(--dark-gray);
+
+  /* barra de desplazamiento */
+  &::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* parte "track" (el fondo) de la barra de desplazamiento */
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* "thumb" (la parte que se desplaza) de la barra de desplazamiento */
+  &::-webkit-scrollbar-thumb {
+    background: var(--blue);
+    border-radius: 10px;
+  }
+
+  /* "thumb" al pasar el cursor sobre él */
+  &::-webkit-scrollbar-thumb:hover {
+    background: #0a3066;
+  }
 }
 
 body {
